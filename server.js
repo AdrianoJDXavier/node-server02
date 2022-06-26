@@ -13,6 +13,9 @@ const mimeTypes = {
     jpeg: "image/jpeg",
     jpg: "image/jpg",
     woff: "font/woof",
+    woff2: "font/woof2",
+    ttf: "font/ttf",
+    pdf: "application/pdf"
 };
 
 http.createServer((req, res) => {
@@ -30,7 +33,7 @@ http.createServer((req, res) => {
     }
 
     if(recurso_carregado.isFile()){
-        let mimeType = mimeTypes[path.extname(caminho_completo_recurso).substring(1)];
+        let mimeType = mimeTypes[path.extname(caminho_completo_recurso).substring(1).toLowerCase()];
         res.writeHead(200, {'Content-Type': mimeType});
         let fluxo_arquivo = fs.createReadStream(caminho_completo_recurso);
         fluxo_arquivo.pipe(res);
