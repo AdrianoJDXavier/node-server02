@@ -1,0 +1,19 @@
+{
+  "name": "server02",
+  "version": "1.0.0",
+  "description": "Repositório criado em cumprimento da atividade 02 da disciplina de BACK END em node js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianoJDXavier/node-server02.git"
+  },
+  "author": "Adriano Xavier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianoJDXavier/node-server02/issues"
+  },
+  "homepage": "https://github.com/AdrianoJDXavier/node-server02#readme"
+}
